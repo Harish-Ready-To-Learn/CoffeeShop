@@ -59,7 +59,7 @@ const CartScreen = ({navigation, route}: any) => {
                 {CartList.map((data: any) => (
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.push('Details', {
+                      navigation.push('DetailsScreen', {
                         index: data.index,
                         id: data.id,
                         type: data.type,
