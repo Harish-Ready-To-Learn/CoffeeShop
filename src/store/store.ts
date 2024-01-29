@@ -77,7 +77,7 @@ export const useStore = create(
                     if (state.CoffeeList[i].id == id) {
                       if (state.CoffeeList[i].favourite == false) {
                         state.CoffeeList[i].favourite = true;
-                        state.FavoritesList.unshift(state.CoffeeList[i]);
+                        state.FavoriteList.unshift(state.CoffeeList[i]);
                       } else {
                         state.CoffeeList[i].favourite = false;
                       }
@@ -89,7 +89,7 @@ export const useStore = create(
                     if (state.BeanList[i].id == id) {
                       if (state.BeanList[i].favourite == false) {
                         state.BeanList[i].favourite = true;
-                        state.FavoritesList.unshift(state.BeanList[i]);
+                        state.FavoriteList.unshift(state.BeanList[i]);
                       } else {
                         state.BeanList[i].favourite = false;
                       }
@@ -126,8 +126,8 @@ export const useStore = create(
                   }
                 }
                 let spliceIndex = -1;
-                for (let i = 0; i < state.FavoritesList.length; i++) {
-                  if (state.FavoritesList[i].id == id) {
+                for (let i = 0; i < state.FavoriteList.length; i++) {
+                  if (state.FavoriteList[i].id == id) {
                     spliceIndex = i;
                     break;
                   }
