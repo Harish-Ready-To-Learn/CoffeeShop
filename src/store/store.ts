@@ -132,7 +132,7 @@ export const useStore = create(
                     break;
                   }
                 }
-                state.FavoritesList.splice(spliceIndex, 1);
+                state.FavoriteList.splice(spliceIndex, 1);
               }),
             ),
             incrementCartItemQuantity: (id: string, size: string) =>
