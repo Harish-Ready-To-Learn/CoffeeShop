@@ -27,7 +27,7 @@ const OrderHistoryScreen = ({navigation}: any) => {
   const [showAnimation, setShowAnimation] = useState(false);
 
   const navigationHandler = ({index, id, type}: any) => {
-    navigation.push('Details', {
+    navigation.push('DetailsScreen', {
       index,
       id,
       type,
